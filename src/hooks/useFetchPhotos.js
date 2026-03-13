@@ -12,19 +12,22 @@ const useFetchPhotos = () => {
         setLoading(true);
         setError(null);
 
+        // Single GET request on page load — no re-fetching on search/filter.
         const response = await axios.get(
-          "https://picsum.photos/v2/list?limit=30",
+          "https://picsuum.photos/v2/list?limit=30",
         );
         setPhotos(response.data);
       } catch {
+        // Any network or HTTP error surfaces here as a friendly message.
         setError("Unable to load photos. Please try again.");
       } finally {
+        // Always turn off the spinner, success or failure.
         setLoading(false);
       }
     };
 
     fetchPhotos();
-  }, []);
+  }, []); 
 
   return { photos, loading, error };
 };

@@ -14,7 +14,7 @@ const PhotoCard = ({ photo, isFavourite, onToggleFavourite }) => {
       <div className="flex items-center justify-between p-3">
         <p className="text-sm font-medium text-gray-700">{photo.author}</p>
 
-        {/* Heart icon: filled (red) when favourited, empty (gray) otherwise. */}
+         {/* Heart icon: filled (red) when favourited, empty (gray) otherwise.  */}
         <button
           type="button"
           aria-label={
