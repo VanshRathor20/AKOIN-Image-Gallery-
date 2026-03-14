@@ -3,6 +3,9 @@
 Responsive Photo Gallery built with React, Vite, and Tailwind. Features API data fetching, real-time search filtering, favourites management using useReducer with localStorage persistence, and performance optimization using useCallback and useMemo.
 
 ---
+## Live Demo
+🔗 Live URL: akoin-image-gallery.netlify.app
+---
 
 ## Features
 
